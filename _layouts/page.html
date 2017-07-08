@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="o-grid">
+    <div class="o-grid__col o-grid__col--3-of-12">
+        <div id="tree-nav-container">
+            <ul class="o-list-ui tree-nav {{ include.display }}">
+                <li{% if page.title == 'Overview' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}">Overview</a></li>
+                <li class="nav-tree-node {% if page.section == 'Foundations' %}nav-tree-node-is-open{% endif %}">
+                    <a>Foundations</a>
+                    <ul>{% include foundations-nav.html %}</ul>
+                </li>
+                <li class="nav-tree-node {% if page.section == 'Components' %}nav-tree-node-is-open{% endif %}">
+                    <a>Components</a>
+                    <ul>{% include components-nav.html %}</ul>
+                </li>
+                <li class="nav-tree-node {% if page.section == 'Resources' %}nav-tree-node-is-open{% endif %}">
+                    <a>Resources</a>
+                    <ul>{% include resources-nav.html %}</ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="o-grid__col o-grid__col--9-of-12">
+        <div class="content-min-height">
+            {{ content }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div class="o-wrap">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    <script type="text/javascript" charset="utf-8">
+    var pixelRatio = (window.devicePixelRatio >= 1.5) ? "high" : "normal";
+    var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXXX-XX']);
+      _gaq.push(['_setDomainName', '.dropbox.com']);
+      _gaq.push(['_setCustomVar', 1, 'Pixel Ratio', pixelRatio, 2 ]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = 'https://ssl.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+</body>
+
+</html>
