@@ -100,7 +100,7 @@ textarea {
 h1, h2, h3, h4,
 .h1, .h2, .h3, .h4 {
  font-weight: 500;
- color: @color-mine-shaft;
+ color: $color-mine-shaft;
 }
 
 h1, .h1,
@@ -207,12 +207,6 @@ small,
  line-height: 18px;
 }
 
-mark,
-.mark {
- background-color: $state-warning-bg;
- padding: .2em;
-}
-
 /* Alignment */
 
 .text-left           { text-align: left; }
@@ -229,7 +223,7 @@ mark,
 
 /* Contextual colors */
 .text-muted {
- color: $text-muted;
+ color: gray;
 }
 
 /* Lists
