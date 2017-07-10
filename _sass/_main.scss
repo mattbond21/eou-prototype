@@ -13,10 +13,10 @@
 
 html {
     color: $gray-10;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background: $gray-1;
+    background: $white;
     text-rendering: optimizeLegibility;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -114,6 +114,13 @@ h4, .h4 {
  margin-bottom: 16px;
 }
 
+h1:first-child, .h1:first-child,
+h2:first-child, .h2:first-child,
+h3:first-child, .h3:first-child,
+h4:first-child, .h4:first-child {
+  margin-top: 0;
+}
+
 h1, .h1 {
  font-size: 32px;
  line-height: 40px;
@@ -135,7 +142,7 @@ h4, .h4 {
 
 a,
 a:visited {
-  color: $teal;
+  color: $darkTeal;
   text-decoration: none;
 }
 
@@ -145,16 +152,14 @@ a:hover {
 
 
 .logo {
-  margin: 22px 0;
-  font-size: 20px;
-  font-weight: 500;
-  float: left;
+  margin: 0 0 24px 44px;
+  width: 160px;
+  height: 30px;
 }
 
 .logo > a,
 .logo > a:hover,
 .logo > a:visited {
-  color: #333;
   text-decoration: none;
 }
 
@@ -233,11 +238,11 @@ small,
 
 ul,
 ol {
- margin: 0 0 24px;
- ul,
- ol {
+  margin: 0 0 24px;
+  ul,
+  ol {
    margin-bottom: 0;
- }
+  }
 }
 
 
@@ -304,11 +309,7 @@ li.dribbble {
 .header {
   width: 100%;
   height: 80px;
-  background: rgba(255,255,255,0.98);
-/*  background: url('../images/image-bg-stripe.png') repeat-x; */
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 40px 0px;
   top: 0;
-  position: fixed;
   z-index: 100;
 }
 
@@ -323,9 +324,9 @@ li.dribbble {
 }
 
 .footer {
-  height: 150px;
+  height: 200px;
   padding: 70px 0 40px 0;
-  color: #bec2c9;
+  color: $gray-5;
 }
 
 

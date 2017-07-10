@@ -22,17 +22,8 @@
 @import
         "normalize",
         "variables",
-        "nav-tree",
         "main",
+        "nav-tree",
         "grid",
         "overrides"
 ;
-
-// Styles to breakout into separate file later
-
-.site-header {
-    margin: 32px 0;
-}
-.content-min-height {
-    min-height: 400px;
-}
