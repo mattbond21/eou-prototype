@@ -1,8 +1,16 @@
-<header class="site-header">
-    <div class="o-wrap">
-        <img src="{{ site.baseurl }}images/logo/logo-dropbox-design.svg" />
-        <!-- <h1 id="logo">
-            <a href="{{ site.baseurl }}"><span class="header-logo">Dropbox Design</span></a>
-        </h1> -->
+<div class="header">
+  <div class="header-stripe"></div>
+  <div class="container">
+    <div class="row np-top np-bottom pull-right">
+      <div class="logo">
+        <a href="{{ site.baseurl }}">Asana</a>
+      </div>
+      <div id="tabs">
+    		<ul class="nav-tabs">
+          <li{% if page.section == 'work' %} class="active"{% else %} class="pull-right"{% endif %}><a href="{{ site.baseurl }}">Work</a></li>
+          <li{% if page.section == 'about' %} class="active"{% else %} class="pull-right"{% endif %}><a href="{{ site.baseurl }}about">About</a></li>
+    		</ul>
+      </div>
     </div>
-</header>
+  </div>
+</div>
