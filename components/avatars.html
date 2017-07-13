@@ -2,6 +2,10 @@
 layout: default
 section: Components
 title: Avatars
+previous: Typography
+previous-path: foundations/typography
+next: Buttons
+next-path: components/buttons
 ---
 
 <h1>{{ page.title }}</h1>
@@ -9,11 +13,4 @@ title: Avatars
     Content
 </p>
 
-<div class="row">
-  <div class="col">
-    Previous
-  </div>
-  <div class="col">
-    Next
-  </div>
-</div>
+{% include pagination-links.html %}

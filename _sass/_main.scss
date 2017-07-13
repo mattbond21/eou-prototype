@@ -397,13 +397,17 @@ li {
 }
 
 /* ==========================================================================
-   Footer nav
+   Pagination nav
    ========================================================================== */
 
-.footer-links {
+.pagination-links {
   background: $gray-1;
   border-radius: 4px;
   margin-top: 120px;
+}
+
+a.next-previous-links:hover {
+  text-decoration: none;
 }
 
 .next,
@@ -415,31 +419,42 @@ li {
 .next {
   text-align: right;
 }
-.previous {
 
+a.next-previous-links:hover > .next > .title,
+a.next-previous-links:hover > .previous > .title {
+  color: $coral;
+}
+
+.title {
+  color: $gray-10;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .next > .title {
-
+  margin-right: 24px;
 }
 
 .previous > .title {
-
+  margin-left: 24px;
 }
 
-.next > .title,
-.previous > .title {
-  color: $gray-10;
-  font-weight: 500;
+.icon-20 {
+  display: inline-block;
+  margin: -4px 0;
+  width: 20px;
+  height: 20px;
 }
 
+.icon-20-chevron-right {
+    background: url('../images/icons/icon-20-right-chevron.png') no-repeat;
+    background-size: 100%;
+}
 
-
-
-
-
-
-
+.icon-20-chevron-left {
+    background: url('../images/icons/icon-20-left-chevron.png') no-repeat;
+    background-size: 100%;
+}
 
 
 
