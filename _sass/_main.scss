@@ -140,6 +140,20 @@ h4, .h4 {
  letter-spacing: -0.2px;
 }
 
+
+pre {
+  display: block;
+  font-size: 12px;
+  font-family: SFMono-Medium,SF Mono,Segoe UI Mono,Roboto Mono,Ubuntu Mono,Menlo,Courier,monospace;
+  width: auto;
+  white-space: pre-wrap;
+  font-weight: 500;
+  margin: 1em 0;
+  background-color: $gray-1;
+  border-radius: 4px;
+  padding: 24px 40px !important;
+}
+
 a,
 a:visited {
   color: $darkTeal;
@@ -149,7 +163,6 @@ a:visited {
 a:hover {
   text-decoration: underline;
 }
-
 
 .logo {
   margin: 0 0 24px 44px;
@@ -257,6 +270,39 @@ img {
 
 li {
   list-style: none;
+}
+
+
+/* =================================================
+  Tables */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 32px;
+}
+thead {
+  border-bottom: 2px solid $gray-3;
+}
+tr {
+  border-bottom: 1px solid $gray-3;
+}
+td,
+th {
+  border: none;
+  padding: 12px 8px;
+  text-align: left;
+}
+th {
+  vertical-align: top;
+}
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}
+td:last-child,
+th:last-child {
+  padding-right: 0;
 }
 
 
@@ -400,10 +446,15 @@ li {
    Pagination nav
    ========================================================================== */
 
+.row.pagination-links {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .pagination-links {
   background: $gray-1;
   border-radius: 4px;
-  margin-top: 120px;
+  margin: 120px 0 40px 0;
 }
 
 a.next-previous-links:hover {
