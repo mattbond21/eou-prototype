@@ -1,5 +1,5 @@
-# Asana Design System
-The design system for Asana. WIP right now. Nothing is deployed.
+# Ease of use prototype
+Playing around with a prototype to test with users.
 
 ## Dependencies
 
