@@ -14,21 +14,17 @@
 .eleven-col,
 .twelve-col {
 	box-sizing: border-box;
-	padding: 0.5rem 1rem;
 	flex-basis: 100%;
 }
 .row {
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: -1rem;
-	margin-right: -1rem;
 }
 .col {
 	flex: 1 1 0 !important;
 }
 .container {
-	width: 1200px;
 	margin: 0 auto;
 	padding: 0;
 	box-sizing: border-box;
@@ -45,7 +41,7 @@
 @media (min-width: 1200px) {
 	.one-col										{ flex-basis: 8.333% !important; }
 	.two-col										{ flex-basis: 16.666% !important; }
-	.three-col									{ flex-basis: 25% !important; }
+	.three-col									{ flex-basis: 304px !important; }
 	.four-col										{ flex-basis: 33.333% !important; }
 	.five-col										{ flex-basis: 41.666% !important; }
 	.six-col										{ flex-basis: 50% !important; }
@@ -66,12 +62,5 @@
 .justify-content-center  					{ justify-content: center !important; }
 
 @media (max-width: 1199px) {
-
-	.container {
-		width: 90%;
-		margin: 0 auto;
-		padding: 0;
-		box-sizing: border-box;
-	}
 
 }

@@ -11,33 +11,12 @@
 
     <div class="container main-section">
       <div class="row">
-        <div class="three-col">
-          <div id="tree-nav-container">
-            <a href="{{ site.baseurl }}">
-              <img src="{{ site.baseurl }}images/logo/asana-design-logo.png" class="logo">
-            </a>
-            <ul class="o-list-ui tree-nav {{ include.display }}">
-                <li{% if page.title == 'Overview' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}">Overview</a></li>
-                <li class="nav-tree-node {% if page.section == 'Foundations' %}nav-tree-node-is-open{% endif %}">
-                    <a>Foundations</a>
-                    <ul>{% include foundations-nav.html %}</ul>
-                </li>
-                <li class="nav-tree-node {% if page.section == 'Components' %}nav-tree-node-is-open{% endif %}">
-                    <a>Components</a>
-                    <ul>{% include components-nav.html %}</ul>
-                </li>
-                <li class="nav-tree-node {% if page.section == 'Content' %}nav-tree-node-is-open{% endif %}">
-                    <a>Content</a>
-                    <ul>{% include content-nav.html %}</ul>
-                </li>
-                <li class="nav-tree-node {% if page.section == 'Resources' %}nav-tree-node-is-open{% endif %}">
-                    <a>Resources</a>
-                    <ul>{% include resources-nav.html %}</ul>
-                </li>
-            </ul>
+        <div class="three-col side-bar">
+          <div class="asana-home-icon">
+            Icon
           </div>
         </div>
-        <div class="col">
+        <div class="col main-content">
             {{ content }}
         </div>
       </div>

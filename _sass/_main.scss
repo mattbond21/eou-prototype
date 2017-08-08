@@ -122,17 +122,18 @@ h4:first-child, .h4:first-child {
 }
 
 h1, .h1 {
- font-size: 32px;
- line-height: 40px;
-}
-
-h2, .h2 {
  font-size: 24px;
  line-height: 32px;
 }
-h3, .h3 {
+
+h2, .h2 {
  font-size: 20px;
  line-height: 28px;
+}
+h3, .h3 {
+ font-size: 18px;
+ line-height: 24px;
+ letter-spacing: -0.2px;
 }
 h4, .h4 {
  font-size: 16px;
@@ -305,31 +306,22 @@ th:last-child {
   padding-right: 0;
 }
 
+/* Sidebar */
 
-/* Header */
-
-.header {
-  width: 100%;
-  height: 80px;
-  top: 0;
-  z-index: 100;
+.main-content {
+  margin: 32px;
 }
 
-.header-stripe {
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(to right, $coral, $gold);
+.side-bar {
+  background: $gray-9;
+  width: 304px;
+  height: 100vh;
+  padding: 16px auto;
 }
 
-.main-section {
-  margin-top: 100px;
-}
 
-.footer {
-  height: 200px;
-  padding: 70px 0 40px 0;
-  color: $gray-5;
-}
+
+
 
 
 /* Cards */
