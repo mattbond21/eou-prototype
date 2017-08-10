@@ -38,10 +38,10 @@
 
 
 /* Devices larger than 700px */
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
 	.one-col										{ flex-basis: 8.333% !important; }
 	.two-col										{ flex-basis: 16.666% !important; }
-	.three-col									{ flex-basis: 304px !important; }
+	.three-col									{ flex-basis: 240px !important; }
 	.four-col										{ flex-basis: 33.333% !important; }
 	.five-col										{ flex-basis: 41.666% !important; }
 	.six-col										{ flex-basis: 50% !important; }
