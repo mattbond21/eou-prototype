@@ -24,6 +24,8 @@
   letter-spacing: -0.1px;
   border-radius: 4px;
   border: 1px solid $gray-5;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .button-primary {
@@ -35,4 +37,95 @@
 .pull-right {
   float: right;
   margin: 0 4px;
+}
+
+
+/* Check circle button */
+
+button.checkbox {
+  transition: width 0.1s ease-out, height 0.1s ease-out;
+  width: 24px;
+  height: 24px;
+  background-color: #FFF;
+  border: 2px solid $gray-4;
+  border-radius: 100px;
+  cursor: pointer;
+  align-self: center;
+  padding: 0px;
+  outline: none;
+  position: relative;
+  top: -1px;
+}
+
+button.checkbox:hover {
+    width: 24px;
+    height: 24px;
+    visibility: visible;
+    border: 2px solid $green;
+    background-image: url("../images/icons/checkmark-green@2x.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+button.checkbox.selected {
+    width: 24px;
+    height: 24px;
+    background-color: $green;
+    border: 2px solid $green;
+    background-image: url("../images/icons/checkmark-white@2x.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.task-list-item {
+  height: 22px;
+}
+.task-title {
+  margin-left: 12px;
+  height: 22px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 700px;
+  display: inline-block;
+}
+.task-title-checked {
+  color: $gray-6;
+}
+
+.custom-field {
+  height: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 100px;
+  padding: 0 8px;
+  line-height: 20px;
+  color: $gray-8;
+  background: $gray-3;
+  width: auto;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.custom-field.custom-field-red {
+  background: #F9D1C5;
+  color: #A93A1A;
+}
+.custom-field.custom-field-yellow {
+  background: #FFF2CF;
+  color: #88690F;
+}
+.custom-field.custom-field-green {
+  background: #DBF8BC;
+  color: #467316;
+}
+.custom-field.custom-field-blue {
+  background: #DCEFFE;
+  color: #1166A7;
+}
+.custom-field.custom-field-purple {
+  background: #EBDDFA;
+  color: #581B9A;
 }
