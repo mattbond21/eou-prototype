@@ -19,16 +19,27 @@
 .button {
   height: 32px;
   padding: 4px 12px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 13px;
   letter-spacing: -0.1px;
   border-radius: 4px;
-  border: 1px solid $gray-5;
   cursor: pointer;
   white-space: nowrap;
+  background: $gray-2;
+  border-color: $gray-2;
+}
+.button:hover {
+  background: $gray-3;
+  border-color: $gray-3;
+  color: $gray-10;
 }
 
 .button-primary {
+  background: $teal;
+  border-color: $teal;
+  color: $white;
+}
+.button-primary:hover {
   background: $darkTeal;
   border-color: $darkTeal;
   color: $white;
