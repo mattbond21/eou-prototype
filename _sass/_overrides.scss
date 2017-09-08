@@ -106,6 +106,18 @@ button.checkbox.selected {
   color: $gray-6;
 }
 
+tr.cell-row:hover {
+  background: $lightTeal;
+  cursor: pointer;
+}
+
+tr.cell-row:hover > td > div.custom-field {
+  opacity: 0;
+}
+
+
+/* Custom fields */
+
 .custom-field {
   height: 20px;
   font-size: 12px;
