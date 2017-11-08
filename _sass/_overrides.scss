@@ -3,16 +3,93 @@
 /* Sidebar */
 
 .main-content {
-  margin: 32px;
+  margin: 16px 64px;
 }
 
-.side-bar {
-  background: $gray-9;
-  width: 240px;
-  height: 100vh;
-  padding: 16px auto;
+.project-header {
+  background: $gray-1;
+  border-bottom: 1px solid $gray-3;
+  height: 72px;
+  padding: 8px auto;
 }
 
+.left-side {
+  margin-left: 24px;
+  display: inline-block;
+  height: 72px;
+}
+.right-side {
+  display: inline-block;
+  float: right;
+  margin-right: 64px;
+  position: relative;
+  height: 72px;
+}
+
+.hamburger-menu {
+  display: inline-block;
+  clear: both;
+  width: 16px;
+  top: 6px;
+  position: relative;
+}
+.project-title {
+  margin: 12px 0 3px 20px;
+  display: inline-block;
+}
+.project-title > h2 {
+  margin: 0;
+}
+.project-nav > ul > a > li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.project-nav > ul > a {
+  color: $gray-8;
+}
+.project-nav > ul > a:hover > li {
+  color: $gray-9;
+  border-bottom: 2px solid $gray-9;
+  padding-bottom: 6px;
+}
+li.project-item-selected {
+  font-weight: 500;
+  color: $darkCoral;
+  border-bottom: 2px solid $darkCoral;
+  padding-bottom: 6px;
+}
+
+.project-share {
+  height: 32px;
+  display: inline-block;
+  border-right: 1px solid $gray-4;
+  padding-right: 24px;
+  margin-top: 18px;
+}
+.project-share > button {
+}
+.project-search {
+  height: 72px;
+  width: 140px;
+  margin-left: 24px;
+  margin-right: 24px;
+  display: inline-block;
+}
+.profile-avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 100px;
+  background: $purple;
+  display: inline-block;
+  position: relative;
+  top: 12px;
+}
+
+
+th {
+  color: $gray-8;
+  font-weight: 500;
+}
 
 /* Buttons */
 
@@ -25,12 +102,13 @@
   border-radius: 4px;
   cursor: pointer;
   white-space: nowrap;
-  background: $gray-2;
-  border-color: $gray-2;
+  background: $white;
+  border: 1px solid $gray-4;
+  color: $gray-8;
 }
 .button:hover {
-  background: $gray-3;
-  border-color: $gray-3;
+  background: $gray-1;
+  border-color: $gray-5;
   color: $gray-10;
 }
 
@@ -66,6 +144,7 @@ button.checkbox {
   outline: none;
   position: relative;
   top: -1px;
+  margin-left: 12px;
 }
 
 button.checkbox:hover {
@@ -107,12 +186,12 @@ button.checkbox.selected {
 }
 
 tr.cell-row:hover {
-  background: $lightTeal;
+  background: $gray-1;
   cursor: pointer;
 }
 
 tr.cell-row:hover > td > div.custom-field {
-  opacity: 0;
+  opacity: 1;
 }
 
 

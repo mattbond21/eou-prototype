@@ -7,11 +7,38 @@
 
     <div class="container main-section">
       <div class="row">
-        <div class="three-col side-bar">
-          <div class="asana-home-icon">
-            <img src="{{ site.baseurl }}images/sidebar-home-expanded.png" width="240">
+        <div class="col project-header">
+          <div class="left-side">
+            <div class="hamburger-menu">
+              <img src="{{ site.baseurl }}images/i_hamburger.svg" width="16" alt="">
+            </div>
+            <div class="project-title">
+              <h2>Target Marketing Launch</h2>
+            </div>
+            <div class="project-nav">
+              <ul>
+                <a href="#"><li class="project-item-selected">List</li></a>
+                <a href="#"><li>Timeline</li></a>
+                <a href="#"><li>Calendar</li></a>
+                <a href="#"><li>Files</li></a>
+                <a href="#"><li>Conversations</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="project-share">
+              <button type="button" name="button" class="button button-secondary">Share</button>
+            </div>
+            <div class="project-search">
+              Search
+            </div>
+            <div class="profile-avatar">
+
+            </div>
           </div>
         </div>
+      </div>
+      <div class="row">
         <div class="col main-content">
             {{ content }}
         </div>
