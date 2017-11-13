@@ -137,13 +137,13 @@
 .drawer-hamburger-icon:before,
 .drawer-hamburger-icon:after {
   position: absolute;
-  top: -8px;
+  top: -7px;
   left: 0;
   content: ' ';
 }
 
 .drawer-hamburger-icon:after {
-  top: 8px;
+  top: 7px;
 }
 
 .drawer-open .drawer-hamburger-icon {
