@@ -15,3 +15,7 @@ $(".radio").click(function(){
     $(this).addClass("selected");
   }
 });
+
+$(document).ready(function() {
+  $('.drawer').drawer();
+});

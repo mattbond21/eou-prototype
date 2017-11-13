@@ -3,15 +3,23 @@
 
     {% include head.html %}
 
-<body>
-
+<body class="drawer drawer--left">
     <div class="container main-section">
       <div class="row">
         <div class="col project-header">
           <div class="left-side">
-            <div class="hamburger-menu">
-              <img src="{{ site.baseurl }}images/i_hamburger.svg" width="16" alt="">
-            </div>
+            <header role="banner">
+              <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="drawer-hamburger-icon"></span>
+              </button>
+              <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                  <li><a class="drawer-brand" href="#">Brand</a></li>
+                  <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+                  <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+                </ul>
+              </nav>
+            </header>
             <div class="project-title">
               <h2>Target Marketing Launch</h2>
             </div>
@@ -30,7 +38,7 @@
               <button type="button" name="button" class="button button-secondary">Share</button>
             </div>
             <div class="project-search">
-              Search
+              Search...
             </div>
             <div class="profile-avatar">
 
@@ -50,5 +58,9 @@
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 <script src="{{ site.baseurl }}js/jquery.js"></script>
 <script src="{{ site.baseurl }}js/main.js"></script>
+<!-- iScroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 
 </html>

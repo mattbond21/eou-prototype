@@ -34,7 +34,7 @@
   position: relative;
 }
 .project-title {
-  margin: 12px 0 3px 20px;
+  margin: 12px 0 3px 40px;
   display: inline-block;
 }
 .project-title > h2 {
@@ -74,12 +74,13 @@ li.project-item-selected {
   margin-left: 24px;
   margin-right: 24px;
   display: inline-block;
+  color: $gray-8;
 }
 .profile-avatar {
   height: 32px;
   width: 32px;
   border-radius: 100px;
-  background: $purple;
+  background-image: url('../images/avatar.jpg');
   display: inline-block;
   position: relative;
   top: 12px;
