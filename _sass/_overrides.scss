@@ -79,11 +79,13 @@ li.project-item-selected {
 .profile-avatar {
   height: 32px;
   width: 32px;
-  border-radius: 100px;
+  border-radius: 50%;
   background-image: url('../images/avatar.jpg');
+  background-size: contain;
   display: inline-block;
   position: relative;
   top: 12px;
+  cursor: pointer;
 }
 
 
@@ -129,6 +131,21 @@ th {
   margin: 0 4px;
 }
 
+.add-new-button {
+  display: inline-block;
+  float: right;
+}
+.button-add-new {
+  background: linear-gradient(45deg, #ff5263 0%, #ff7381 60%, #fcbd01 115%);
+  color: $white;
+  border: none;
+}
+.button-add-new:hover {
+  background: linear-gradient(to top right, #ff1f35, #ff4053 35%, #c99701);
+  color: $white;
+  border: none;
+}
+
 
 /* Check circle button */
 
@@ -145,7 +162,8 @@ button.checkbox {
   outline: none;
   position: relative;
   top: -1px;
-  margin-left: 12px;
+  margin: 0 0 0 12px;
+  display: inline-block;
 }
 
 button.checkbox:hover {
