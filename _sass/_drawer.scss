@@ -42,18 +42,25 @@
   list-style: none;
 }
 
-.drawer-menu-item {
-  font-size: 1rem;
+a.drawer-menu-item {
+  font-size: 16px;
+  font-weight: 500;
   display: block;
-  padding: .75rem;
+  padding: 4px 0;
   text-decoration: none;
-  color: #222;
+  color: $gray-5;
 }
 
 .drawer-menu-item:hover {
-  text-decoration: underline;
-  color: #555;
+  text-decoration: none;
+  color: $gray-7;
   background-color: transparent;
+}
+
+
+.sidebar-separator {
+    border-color: rgba(255,255,255,0.08);
+    margin: 24px 0;
 }
 
 /*! overlay */

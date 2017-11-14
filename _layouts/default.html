@@ -20,7 +20,17 @@
                     </a>
                   </div>
                   <div class="add-new-button">
-                    <button type="button" name="button" class="button button-add-new">Add New</button>
+                    <div class="dropdown">
+                      <button class="button button-add-new dropdown-toggle" type="button" id="addnewMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Add New
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="addnewMenu">
+                        <li><a href="#">Task</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Invite</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
 
@@ -32,12 +42,13 @@
                   <li><a class="drawer-menu-item" href="#">Reports</a></li>
                 </ul>
 
+                <hr class="sidebar-separator">
+
+                <h5>MY PROJECTS</h5>
                 <div id="tree-nav-container">
-                  <h5>My Projects</h5>
                   <ul class="o-list-ui tree-nav {{ include.display }}">
-                      <li{% if page.title == 'Overview' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}">Overview</a></li>
                       <li class="nav-tree-node {% if page.section == 'Foundations' %}nav-tree-node-is-open{% endif %}">
-                          <a>Foundations</a>
+                          <a>Design</a>
                           <ul>
                             <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
 <li{% if page.title == 'Buttons' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/buttons/">Buttons</a></li>
@@ -46,16 +57,16 @@
                           </ul>
                       </li>
                       <li class="nav-tree-node {% if page.section == 'Components' %}nav-tree-node-is-open{% endif %}">
-                          <a>Components</a>
+                          <a>Marketing</a>
                           <ul>
                             <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
 <li{% if page.title == 'Buttons' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/buttons/">Buttons</a></li>
-<li{% if page.title == 'Dialogs' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/dialogs/">Dialogs</a></li>
+<li{% if page.title == 'Other' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/dialogs/">Target Marketing Launch</a></li>
 <li{% if page.title == 'Forms' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/forms/">Forms</a></li>
                           </ul>
                       </li>
                       <li class="nav-tree-node {% if page.section == 'Content' %}nav-tree-node-is-open{% endif %}">
-                          <a>Content</a>
+                          <a>Product</a>
                           <ul>
                             <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
 <li{% if page.title == 'Buttons' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/buttons/">Buttons</a></li>
@@ -89,9 +100,17 @@
               <button type="button" name="button" class="button button-secondary" data-toggle="modal" data-target="#shareModal">Share</button>
             </div>
             <div class="project-search">
-              Search...
+              <span style="margin-right:12px;"><img src="{{ site.baseurl }}images/icons/icon-16-search.png" alt="" width="16"></span>Search...
             </div>
-            <div class="profile-avatar">
+            <div class="avatar-container">
+              <div class="dropdown">
+                <a class="profile-avatar dropdown-toggle" id="profileMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="profileMenu">
+                  <li><a href="#">Task</a></li>
+                  <li><a href="#">Project</a></li>
+                  <li><a href="#">Invite</a></li>
+                </ul>
+              </div>
 
             </div>
           </div>

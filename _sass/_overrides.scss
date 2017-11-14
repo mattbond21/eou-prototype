@@ -76,6 +76,11 @@ li.project-item-selected {
   display: inline-block;
   color: $gray-8;
 }
+.avatar-container {
+  display: inline-block;
+  position: relative;
+  top: 12px;
+}
 .profile-avatar {
   height: 32px;
   width: 32px;
@@ -83,8 +88,6 @@ li.project-item-selected {
   background-image: url('../images/avatar.jpg');
   background-size: contain;
   display: inline-block;
-  position: relative;
-  top: 12px;
   cursor: pointer;
 }
 

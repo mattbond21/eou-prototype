@@ -5,7 +5,7 @@
 #tree-nav-container {
     padding-left: 0px; /* Make room for the open/close pseudo element icons */
     overflow-y: auto;
-    background-size: 100% 40px, 100% 40px, 100% 10px, 100% 10px;
+    margin-left: -20px;
 
   	/* Opera doesn't support this in the shorthand */
   	background-attachment: local, local, scroll, scroll;
@@ -28,7 +28,7 @@
 }
 
 #tree-nav-container ul.o-list-ui li.nav-tree-node > ul {
-  margin-left: -16px;
+  margin-left: -22px;
 }
 
 #tree-nav-container ul.o-list-ui li.nav-tree-node-is-open > ul {
@@ -43,6 +43,11 @@
     left: -10px;
 }
 
+#tree-nav-container .nav-tree-node > a:hover,
+#tree-nav-container ul.o-list-ui a:hover {
+  text-decoration: none;
+  color: $gray-5;
+}
 #tree-nav-container .nav-tree-node {
     position: relative;
 }
@@ -91,14 +96,13 @@
 
 .o-list-ui > .nav-tree-node-active > a,
 .nav-tree-node > ul > .nav-tree-node-active > a {
-    color: $coral;
-    font-weight: 700;
+    color: rgba(255,255,255,0.8);
 }
 
 .o-list-ui.tree-nav > li {
     margin-bottom: 8px;
 }
 
-.o-list-ui.tree-nav > li:first-child {
-    margin-left: 5px;
-}
+// .o-list-ui.tree-nav > li:first-child {
+//     margin-left: 5px;
+// }
