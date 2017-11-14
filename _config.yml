@@ -9,6 +9,4 @@ sass:
 
 # Setup
 title:            Ease of use prototype
-tagline:          'The design system for Asana Product Design'
-url:              http://design.asana.biz
-baseurl:          /
+baseurl:          /eou-prototype/
