@@ -3,14 +3,17 @@
 /* Sidebar */
 
 .main-content {
-  margin: 16px 64px;
+  margin: 72px 64px 16px 64px;
 }
 
 .project-header {
   background: $gray-1;
   border-bottom: 1px solid $gray-3;
   height: 72px;
-  padding: 8px auto;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba($gray-10, 0.08);
+  z-index: 99;
 }
 
 .left-side {
@@ -50,13 +53,13 @@
 .project-nav > ul > a:hover > li {
   color: $gray-9;
   border-bottom: 2px solid $gray-9;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
 }
 li.project-item-selected {
   font-weight: 500;
   color: $darkCoral;
   border-bottom: 2px solid $darkCoral;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
 }
 
 .project-share {
@@ -91,11 +94,68 @@ li.project-item-selected {
   cursor: pointer;
 }
 
-
-th {
-  color: $gray-8;
-  font-weight: 500;
+.profile-avatar-24 {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
 }
+.assignee-name {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}
+
+.section-header {
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  color: $gray-10;
+}
+.table-headers {
+  font-size: 12px;
+  letter-spacing: -0.1px;
+  top: 4px;
+  position: relative;
+}
+
+a.table-task {
+  color: $gray-10;
+}
+a.table-task:hover {
+  color: $darkTeal;
+  text-decoration: none;
+}
+
+/* Task details pane */
+
+.task-details-pane {
+  border-left: 1px solid $gray-3;
+  height: 100%;
+  padding: 24px 32px;
+}
+
+.selected-cell-1 {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.selected-cell-4 {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.selected-cell-2 {
+  color: $darkTeal;
+}
+.selected-cell-1,
+.selected-cell-2,
+.selected-cell-3,
+.selected-cell-4 {
+  background: $lightTeal;
+}
+
+
+
+
 
 /* Buttons */
 
@@ -154,8 +214,8 @@ th {
 
 button.checkbox {
   transition: width 0.1s ease-out, height 0.1s ease-out;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background-color: #FFF;
   border: 2px solid $gray-4;
   border-radius: 100px;
@@ -165,13 +225,13 @@ button.checkbox {
   outline: none;
   position: relative;
   top: -1px;
-  margin: 0 0 0 12px;
+  margin: 12px 0 12px 12px;
   display: inline-block;
 }
 
 button.checkbox:hover {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     visibility: visible;
     border: 2px solid $green;
     background-image: url("../images/icons/checkmark-green@2x.png");
@@ -180,8 +240,8 @@ button.checkbox:hover {
 }
 
 button.checkbox.selected {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     background-color: $green;
     border: 2px solid $green;
     background-image: url("../images/icons/checkmark-white@2x.png");
@@ -191,31 +251,36 @@ button.checkbox.selected {
 }
 
 .task-list-item {
-  height: 22px;
+  width: 38px;
 }
 .task-title {
-  margin-left: 12px;
-  height: 22px;
   position: relative;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 700px;
-  display: inline-block;
+  line-height: 22px;
+  max-width: 200px;
+  text-align: left;
 }
 .task-title-checked {
   color: $gray-6;
 }
 
 tr.cell-row:hover {
-  background: $gray-1;
   cursor: pointer;
 }
 
-tr.cell-row:hover > td > div.custom-field {
-  opacity: 1;
+tr.cell-row:hover > td.task-title {
+  color: $darkTeal;
 }
-
+span.empty-cell {
+  height: 2px;
+  width: 16px;
+  background: $gray-4;
+  top: -2px;
+  display: inline-block;
+  position: relative;
+}
 
 /* Custom fields */
 
@@ -227,29 +292,29 @@ tr.cell-row:hover > td > div.custom-field {
   padding: 0 8px;
   line-height: 20px;
   color: $gray-8;
-  background: $gray-3;
+  background: $gray-2;
   width: auto;
   display: inline-block;
   white-space: nowrap;
 }
 
 .custom-field.custom-field-red {
-  background: #F9D1C5;
-  color: #A93A1A;
+  background: #FFD6D4;
+  color: #7F263B;
 }
 .custom-field.custom-field-yellow {
-  background: #FFF2CF;
-  color: #88690F;
+  background: #FFF9CF;
+  color: #7A722F;
 }
 .custom-field.custom-field-green {
-  background: #DBF8BC;
-  color: #467316;
+  background: #D5F2C7;
+  color: #1E661E;
 }
 .custom-field.custom-field-blue {
-  background: #DCEFFE;
-  color: #1166A7;
+  background: #C7EEFF;
+  color: #073B9D;
 }
 .custom-field.custom-field-purple {
-  background: #EBDDFA;
-  color: #581B9A;
+  background: #E1E1FF;
+  color: #3B3F9D;
 }

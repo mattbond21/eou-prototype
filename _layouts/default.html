@@ -5,80 +5,81 @@
 
 <body class="drawer drawer--left">
     <div class="container main-section">
-      <div class="row">
-        <div class="col project-header">
-          <div class="left-side">
-            <header role="banner">
-              <button type="button" class="drawer-toggle drawer-hamburger">
-                <span class="drawer-hamburger-icon"></span>
-              </button>
-              <nav class="drawer-nav" role="navigation">
-                <div class="sidebar-header">
-                  <div class="asana-logo">
-                    <a href="{{ site.baseurl }}">
-                      <img src="{{ site.baseurl }}images/sidebar-logo.png" width="83">
-                    </a>
-                  </div>
-                  <div class="add-new-button">
-                    <div class="dropdown">
-                      <button class="button button-add-new dropdown-toggle" type="button" id="addnewMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Add New
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="addnewMenu">
-                        <li><a href="#">Task</a></li>
-                        <li><a href="#">Project</a></li>
-                        <li><a href="#">Invite</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <ul class="drawer-menu">
-                  <li><a class="drawer-menu-item" href="#">Home</a></li>
-                  <li><a class="drawer-menu-item" href="#">My Tasks</a></li>
-                  <li><a class="drawer-menu-item" href="#">Notifications</a></li>
-                  <li><a class="drawer-menu-item" href="#">Projects</a></li>
-                  <li><a class="drawer-menu-item" href="#">Reports</a></li>
+      <header role="banner">
+        <nav class="drawer-nav" role="navigation">
+          <div class="sidebar-header">
+            <div class="asana-logo">
+              <a href="{{ site.baseurl }}">
+                <img src="{{ site.baseurl }}images/sidebar-logo.png" width="83">
+              </a>
+            </div>
+            <div class="add-new-button">
+              <div class="dropdown">
+                <button class="button button-add-new dropdown-toggle" type="button" id="addnewMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Add New
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="addnewMenu">
+                  <li><a href="#">Task</a></li>
+                  <li><a href="#">Project</a></li>
+                  <li><a href="#">Invite</a></li>
                 </ul>
+              </div>
+            </div>
+          </div>
 
-                <hr class="sidebar-separator">
+          <ul class="drawer-menu">
+            <li><a class="drawer-menu-item" href="{{ site.baseurl }}">Home</a></li>
+            <li><a class="drawer-menu-item" href="#">My Tasks</a></li>
+            <li><a class="drawer-menu-item" href="#">Notifications</a></li>
+            <li><a class="drawer-menu-item" href="#">Projects</a></li>
+            <li><a class="drawer-menu-item" href="#">Reports</a></li>
+          </ul>
 
-                <h5>MY PROJECTS</h5>
-                <div id="tree-nav-container">
-                  <ul class="o-list-ui tree-nav {{ include.display }}">
-                      <li class="nav-tree-node {% if page.section == 'Foundations' %}nav-tree-node-is-open{% endif %}">
-                          <a>Design</a>
-                          <ul>
-                            <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
+          <hr class="sidebar-separator">
+
+          <h5>MY PROJECTS</h5>
+          <div id="tree-nav-container">
+            <ul class="o-list-ui tree-nav {{ include.display }}">
+                <li class="nav-tree-node {% if page.section == 'Foundations' %}nav-tree-node-is-open{% endif %}">
+                    <a>Design</a>
+                    <ul>
+                      <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
 <li{% if page.title == 'Buttons' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/buttons/">Buttons</a></li>
 <li{% if page.title == 'Dialogs' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/dialogs/">Dialogs</a></li>
 <li{% if page.title == 'Forms' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/forms/">Forms</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-tree-node {% if page.section == 'Components' %}nav-tree-node-is-open{% endif %}">
-                          <a>Marketing</a>
-                          <ul>
-                            <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tree-node {% if page.section == 'Components' %}nav-tree-node-is-open{% endif %}">
+                    <a>Marketing</a>
+                    <ul>
+                      <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
 <li{% if page.title == 'Buttons' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/buttons/">Buttons</a></li>
 <li{% if page.title == 'Other' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/dialogs/">Target Marketing Launch</a></li>
 <li{% if page.title == 'Forms' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/forms/">Forms</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-tree-node {% if page.section == 'Content' %}nav-tree-node-is-open{% endif %}">
-                          <a>Product</a>
-                          <ul>
-                            <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tree-node {% if page.section == 'Content' %}nav-tree-node-is-open{% endif %}">
+                    <a>Product</a>
+                    <ul>
+                      <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
 <li{% if page.title == 'Buttons' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/buttons/">Buttons</a></li>
 <li{% if page.title == 'Dialogs' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/dialogs/">Dialogs</a></li>
 <li{% if page.title == 'Forms' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/forms/">Forms</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-                </div>
+                    </ul>
+                </li>
+            </ul>
+          </div>
 
-              </nav>
-            </header>
+        </nav>
+      </header>
+
+      <div class="row">
+        <div class="col project-header">
+          <div class="left-side">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+              <span class="drawer-hamburger-icon"></span>
+            </button>
             <div class="project-title">
               <h2>
                 Target Marketing Launch
