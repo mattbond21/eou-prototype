@@ -132,7 +132,7 @@ a.table-task:hover {
 .task-details-pane {
   border-left: 1px solid $gray-3;
   height: 100%;
-  padding: 24px 32px;
+  padding: 24px 0 0 32px;
 }
 
 .selected-cell-1 {
@@ -153,7 +153,9 @@ a.table-task:hover {
   background: $lightTeal;
 }
 
-
+.task-details-more-menu {
+  display: inline-block;
+}
 
 
 

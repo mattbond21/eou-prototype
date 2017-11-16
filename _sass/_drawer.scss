@@ -57,6 +57,9 @@ a.drawer-menu-item {
   background-color: transparent;
 }
 
+a.drawer-menu-item.nav-item-selected {
+  color: $darkCoral;
+}
 
 .sidebar-separator {
     border-color: rgba(255,255,255,0.08);

@@ -41,31 +41,36 @@
           <h5>MY PROJECTS</h5>
           <div id="tree-nav-container">
             <ul class="o-list-ui tree-nav {{ include.display }}">
-                <li class="nav-tree-node {% if page.section == 'Foundations' %}nav-tree-node-is-open{% endif %}">
+                <li class="nav-tree-node {% if page.folder == 'Design' %}nav-tree-node-is-open{% endif %}">
                     <a>Design</a>
                     <ul>
-                      <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
-<li{% if page.title == 'Buttons' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/buttons/">Buttons</a></li>
-<li{% if page.title == 'Dialogs' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/dialogs/">Dialogs</a></li>
-<li{% if page.title == 'Forms' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/forms/">Forms</a></li>
+                      <li><a href="#">Design Critique</a></li>
+                      <li><a href="#">Delight Hackathon</a></li>
+                      <li><a href="#">Design Resources</a></li>
+                      <li><a href="#">Design Opportunities</a></li>
+                      <li><a href="#">Competitor Accounts List</a></li>
+                      <li><a href="#">Iconography</a></li>
+                      <li><a href="#">Designer Onboarding Reference</a></li>
                     </ul>
                 </li>
-                <li class="nav-tree-node {% if page.section == 'Components' %}nav-tree-node-is-open{% endif %}">
+                <li class="nav-tree-node {% if page.folder == 'Marketing' %}nav-tree-node-is-open{% endif %}">
                     <a>Marketing</a>
                     <ul>
-                      <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
-<li{% if page.title == 'Buttons' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/buttons/">Buttons</a></li>
-<li{% if page.title == 'Other' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/dialogs/">Target Marketing Launch</a></li>
-<li{% if page.title == 'Forms' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/forms/">Forms</a></li>
+                      <li><a href="#">CO Content Needs</a></li>
+                      <li><a href="#">Customer Journery Opportunities</a></li>
+                      <li{% if page.title == 'Tasks' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}">Target Marketing Launch</a></li>
+                      <li><a href="#">Research on pricing</a></li>
+                      <li><a href="#">Library of terms</a></li>
                     </ul>
                 </li>
-                <li class="nav-tree-node {% if page.section == 'Content' %}nav-tree-node-is-open{% endif %}">
-                    <a>Product</a>
+                <li class="nav-tree-node {% if page.folder == 'Search' %}nav-tree-node-is-open{% endif %}">
+                    <a>Search Views</a>
                     <ul>
-                      <li{% if page.title == 'Avatars' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/avatars/">Avatars</a></li>
-<li{% if page.title == 'Buttons' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/buttons/">Buttons</a></li>
-<li{% if page.title == 'Dialogs' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/dialogs/">Dialogs</a></li>
-<li{% if page.title == 'Forms' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}components/forms/">Forms</a></li>
+                      <li><a href="#">Search Views Roadmap</a></li>
+                      <li><a href="#">Sprint 1</a></li>
+                      <li><a href="#">Milestones</a></li>
+                      <li><a href="#">Search Views Meeting Agenda</a></li>
+                      <li><a href="#">Kickoff Prep</a></li>
                     </ul>
                 </li>
             </ul>

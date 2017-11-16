@@ -5,7 +5,7 @@
 #tree-nav-container {
     padding-left: 0px; /* Make room for the open/close pseudo element icons */
     overflow-y: auto;
-    margin-left: -20px;
+    margin-left: -24px;
 
   	/* Opera doesn't support this in the shorthand */
   	background-attachment: local, local, scroll, scroll;
@@ -23,7 +23,7 @@
 
 #tree-nav-container ul.o-list-ui li > ul {
     max-height: 0;
-    transition: max-height 0.4s cubic-bezier(0,1,.59,1);
+    transition: max-height 0.2s cubic-bezier(0,1,.59,1);
     overflow: hidden;
     list-style-type: none;
 }
@@ -33,21 +33,21 @@
 }
 
 #tree-nav-container ul.o-list-ui li.nav-tree-node-is-open > ul {
-    transition: max-height 0.4s linear;
+    transition: max-height 0.2s linear;
     max-height: 40em;
 }
 
 /*Expand the clickable area to include the arrow */
 #tree-nav-container .nav-tree-node > a {
     position: relative;
-    padding-left: 15px; /* 20px for the expanded clickable area, and 5 for the old padding */
-    left: -10px;
+    padding-left: 20px; /* 20px for the expanded clickable area, and 5 for the old padding */
+    left: -16px;
 }
 
 #tree-nav-container .nav-tree-node > a:hover,
 #tree-nav-container ul.o-list-ui a:hover {
   text-decoration: none;
-  color: $gray-5;
+  color: $gray-7;
 }
 #tree-nav-container .nav-tree-node {
     position: relative;
@@ -58,10 +58,10 @@
     position: absolute;
     width: 5px;
     height: 5px;
-    border-bottom: 2px solid $gray-6;
-    border-right: 2px solid $gray-6;
+    border-bottom: 2px solid $gray-5;
+    border-right: 2px solid $gray-5;
     top: 8px;
-    left: -20px;
+    left: -16px;
     /*transform*/
     -webkit-transform:rotate(-45deg);
     -moz-transform:rotate(-45deg);
@@ -92,12 +92,24 @@
 .o-list-ui > li > a,
 .nav-tree-node > a,
 .nav-tree-node > ul > li > a {
-    color: $gray-7;
+    color: $gray-5;
 }
 
 .o-list-ui > .nav-tree-node-active > a,
 .nav-tree-node > ul > .nav-tree-node-active > a {
-    color: rgba(255,255,255,0.8);
+    color: $darkCoral;
+    font-weight: 600;
+}
+
+.o-list-ui > .nav-tree-node-active > a,
+.nav-tree-node > ul > .nav-tree-node-active > a::before {
+    content: '';
+    width: 3px;
+    height: 20px;
+    background: $darkCoral;
+    display: inline-block;
+    position: absolute;
+    left: -40px;
 }
 
 .o-list-ui.tree-nav > li {

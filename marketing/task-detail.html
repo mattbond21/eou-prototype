@@ -4,7 +4,7 @@ title: Task detail
 ---
 
 <div class="row">
-  <div class="four-col" style="margin-top: 20px; padding-right: 16px; height: 100vh; overflow-y: scroll;">
+  <div class="four-col" style="margin: 20px 24px 0 0;">
     <div class="col">
       <button type="button" name="button" class="button button-primary">Add Task</button>
     </div>
@@ -21,7 +21,7 @@ title: Task detail
           <td>&nbsp;</td>
           <td>&nbsp;</td>
         </tr>
-        <tr class="cell-row" style="border-bottom:transparent;">
+        <tr class="cell-row" style="border-bottom:1px solid transparent;">
           <td class="task-list-item"><button class="checkbox"></button></td>
           <td class="task-title">Finalize campaign brief for the ads team</td>
           <td>&nbsp;</td>
@@ -29,7 +29,7 @@ title: Task detail
             <div class="profile-avatar profile-avatar-24"></div>
           </td>
         </tr>
-        <tr class="cell-row" style="border-bottom:transparent;">
+        <tr class="cell-row" style="border-bottom:1px solid transparent;">
           <td class="task-list-item selected-cell-1"><button class="checkbox"></button></td>
           <td class="task-title selected-cell-2">Host kickoff meeting and brainstorm</td>
           <td class="selected-cell-3">Nov&nbsp;7</td>
@@ -148,7 +148,30 @@ title: Task detail
   </div>
   <div class="col">
     <div class="task-details-pane">
-      Content
+      <div class="row">
+        <div class="col">
+          Left stuff
+        </div>
+        <div class="col">
+          <div class="task-details-more-menu">
+            <a href="#"><img src="{{ site.baseurl }}images/" alt=""></a>
+          </div>
+          <button class="button button-primary" style="float:right">Mark Complete</button>
+        </div>
+      </div>
+      <div class="row" style="margin-top:8px;">
+        <div class="ten-col">
+          <h1>Name of the Task</h1>
+        </div>
+        <div class="col">
+          <div class="assignee-label">
+          </div>
+          <div class="assignee-name">
+            <h5>Assignee</h5>
+            Louis Lecat
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
