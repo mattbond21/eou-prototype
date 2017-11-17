@@ -153,8 +153,15 @@ title: Task detail
           Left stuff
         </div>
         <div class="col">
-          <div class="task-details-more-menu">
-            <a href="#"><img src="{{ site.baseurl }}images/" alt=""></a>
+          <div class="more-menu-container">
+            <div class="dropdown">
+              <a class="icon-more-menu dropdown-toggle" id="taskDetailsMoreMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></a>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="taskDetailsMoreMenu">
+                <li><a href="#">Task</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Invite</a></li>
+              </ul>
+            </div>
           </div>
           <button class="button button-primary" style="float:right">Mark Complete</button>
         </div>
