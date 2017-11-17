@@ -7,7 +7,7 @@ title: Tasks
 <div class="row">
   <div class="four-col" style="margin: 20px 24px 0 0;">
     <div class="col">
-      <button type="button" name="button" class="button button-primary">Add Task</button>
+      <button type="button" name="button" class="button button-secondary">Add Task</button>
     </div>
     <table style="margin-top:8px; width: 95%;">
       <thead>
@@ -151,10 +151,15 @@ title: Tasks
     <div class="task-details-pane">
       <div class="row">
         <div class="col">
-          Left stuff
+          <a class="icon-view-arrow" href="{{ site.baseurl }}marketing/target-marketing-launch"></a>
+          <span class="task-details-header-separator"></span>
+          <a class="icon-left-chevron"></a>
+          <span class="task-count">3 of 15</span>
+          <a class="icon-right-chevron"></a>
         </div>
         <div class="col">
-          <div class="more-menu-container">
+          <button class="button button-primary" style="float:right">Mark Complete</button>
+          <!-- <div class="more-menu-container">
             <div class="dropdown">
               <a class="icon-more-menu dropdown-toggle" id="taskDetailsMoreMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></a>
               <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="taskDetailsMoreMenu">
@@ -163,20 +168,30 @@ title: Tasks
                 <li><a href="#">Invite</a></li>
               </ul>
             </div>
-          </div>
-          <button class="button button-primary" style="float:right">Mark Complete</button>
+          </div> -->
         </div>
       </div>
       <div class="row" style="margin-top:8px;">
-        <div class="ten-col">
+        <div class="ten-col" style="padding-right:48px;">
           <h1>Name of the Task</h1>
+          <h5>Description</h5>
+          <p>Discoverability of sections is really bad so we should show that instead of on hover. The other quick win is using a solid button instead of the outline button for &ldquo;Add Task&rdquo;. See attachments for examples.</p>
+          <h5>Attachments</h5>
         </div>
         <div class="col">
           <div class="assignee-label">
           </div>
           <div class="assignee-name">
             <h5>Assignee</h5>
-            Louis Lecat
+            <div class="profile-avatar profile-avatar-24"></div>
+            <div class="assignee-name">Louis Lecat</div>
+            <h5>Due date</h5>
+            Nov 29
+            <h5>Created by</h5>
+            <div class="profile-avatar profile-avatar-24"></div>
+            <div class="assignee-name">Matt Bond</div>
+            <h5>Created on</h5>
+            Oct 3
           </div>
         </div>
       </div>
