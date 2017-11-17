@@ -234,6 +234,38 @@ a.table-task:hover {
   margin: 0 6px;
 }
 
+.add-attachment {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  background-image: url('../images/icons/icon-attachment-plus.png');
+  background-size: contain;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(33,33,33,0.08);
+}
+.add-attachment:hover {
+  background-image: url('../images/icons/icon-add-attachment-dark.png');
+}
+
+.image-attachment {
+  width: 128px;
+  height: 80px;
+  border: 1px solid $gray-3;
+  border-radius: 4px;
+  background: $lightTeal;
+  display: inline-block;
+  margin-left: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(33,33,33,0.08);
+}
+.image-attachment:hover {
+  border: 1px solid transparent;
+  background: rgba(33,33,33,0.5);
+}
+
+
+
 /* Buttons */
 
 .button {
